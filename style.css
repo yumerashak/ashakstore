@@ -1,0 +1,119 @@
+/* Genel Stiller */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 20px;
+    color: white;
+    max-width: 1200px; /* Header genişliğini sınırla */
+    margin: 0 auto; /* Ortala */
+    border-radius: 10px; /* Hafif köşeler */
+}
+
+
+/* Logo */
+.logo img {
+    height: 50px; /* Logonun boyutunu ayarlayabilirsin */
+}
+
+/* Menü */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    color: #313131; /* Metin rengini siyah yapar */
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* İkonlar da siyah olsun */
+nav ul li i {
+    color: #313131;
+    margin-right: 8px;
+}
+/* Hakkımızda Bölümü */
+.about {
+    max-width: 900px; /* İçeriğin genişliğini sınırla */
+    margin: 50px auto; /* Ortaya al ve yukarıdan boşluk bırak */
+    padding: 20px;
+    background: white;
+    text-align: center;
+}
+
+.about p {
+    text-align: justify; /* Daha düzenli bir okuma deneyimi için */
+    line-height: 1.6; /* Satır aralığını artırarak okunabilirliği yükselt */
+}
+
+.about img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Hizmetler Bölümü */
+.services {
+    background: #ececec;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.service {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    color: #313131;
+}
+
+/* Footer */
+footer {
+    background: white;
+    color: black;
+    padding: 10px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 192px;
+    height: 192px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
